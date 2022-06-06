@@ -1,3 +1,27 @@
 body {
-    background-color: lightgray;
+    background-color: lightgreen;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ----------------------------------- */
+/* Login form                          */
+/* ----------------------------------- */
+
+#form_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+    border: 2px solid #333;
+    border-radius: 6px;
+    box-shadow: 0 0 3px #333;
+}
+
+#form_login .login_control {
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
 }
