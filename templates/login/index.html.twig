@@ -8,11 +8,15 @@
     {% endif %}
 
     <form action="{{ path('login') }}" method="post" id="form_login">
-        <label for="username" class="login_control">Email</label>
-        <input type="text" id="username" name="_username" value="{{ last_username }}"/>
+        <div class="form_control">
+            <input type="text" id="username" name="_username" value="{{ last_username }}" required/>
+            <label for="username">Email</label>
+        </div>
 
-        <label for="password" class="login_control">Password</label>
-        <input type="password" id="password" name="_password"/>
+        <div class="form_control">
+            <input type="password" id="password" name="_password" required/>
+            <label for="password">Password</label>
+        </div>
 
         {# Control the URL the user is redirected to on success #}
         <input type="hidden" name="_target_path" value="{{ path('home') }}"/> 
